@@ -1,0 +1,32 @@
+{
+    "name": "kolyunya/yii2-oauth2-validation",
+    "description": "The library provides a uniform API for validation of OAuth2 access tokens of various platforms. That is using the library you can check if the access token you receive from the client is valid for a specific user of a platform.",
+    "keywords":
+    [
+        "OAuth",
+        "OAuth2",
+        "authentication",
+        "validation",
+        "access-token",
+        "Yii",
+        "Yii2"
+    ],
+    "homepage": "https://github.com/Kolyunya/yii2-oauth2-validation",
+    "type": "yii2-extension",
+    "license": "GNU GPL v3.0",
+    "authors":
+    [
+        {
+            "name": "Oleynikov Nikolay",
+            "email": "OleynikovNY@mail.ru",
+            "homepage": "http://github.com/Kolyunya/"
+        }
+    ],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "kolyunya\\yii2\\filters\\": "sources"
+        }
+    }
+}
