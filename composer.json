@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "kolyunya/oauth2-validation": "*"
+        "kolyunya/oauth2-validation": "dev-master"
     },
     "autoload":
     {
