@@ -22,6 +22,9 @@
             "homepage": "http://github.com/Kolyunya/"
         }
     ],
+    "require": {
+        "kolyunya/oauth2-validation": "*"
+    },
     "autoload":
     {
         "psr-4":
