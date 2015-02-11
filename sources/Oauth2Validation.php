@@ -4,6 +4,7 @@ namespace kolyunya\yii2\filters;
 
 use Yii;
 use yii\base\ActionFilter;
+use yii\web\UnauthorizedHttpException;
 use kolyunya\oauth2\validation\ClientFactory;
 
 class Oauth2Validation extends ActionFilter
@@ -22,6 +23,10 @@ class Oauth2Validation extends ActionFilter
         $clientFactory = new ClientFactory($this->clientName, $this->clientsData);
         $client = $clientFactory->make();
         $authenticated = $client->validate($this->userId, $this->userToken);
-        return $authenticated;
+        if ($authenticated === true) {
+            return true;
+        } else {
+            throw new UnauthorizedHttpException();
+        }
     }
 }
